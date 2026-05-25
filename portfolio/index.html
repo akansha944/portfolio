@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Akansha Aggarwal — Computer Systems Engineering portfolio, robotics & AI projects."
+    />
+    <meta property="og:title" content="Akansha Aggarwal — Portfolio" />
+    <meta
+      property="og:description"
+      content="Robotics, embedded systems, AI/ML — University of Auckland graduate."
+    />
+    <meta property="og:type" content="website" />
+    <title>Akansha Aggarwal — Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <div class="grain" aria-hidden="true"></div>
+
+    <header class="site-header">
+      <a href="#" class="logo" data-nav="hero">
+        <span class="logo-mark">◆</span>
+        <span class="logo-text" data-profile="initials">AA</span>
+      </a>
+      <nav class="nav-desktop" aria-label="Primary">
+        <a href="#about" data-nav="about">About</a>
+        <a href="#resume" data-nav="resume">Resume</a>
+        <a href="#skills" data-nav="skills">Skills</a>
+        <a href="#projects" data-nav="projects">Work</a>
+        <a href="#contact" data-nav="contact">Contact</a>
+      </nav>
+      <div class="header-actions">
+        <button
+          type="button"
+          class="btn-icon theme-toggle"
+          aria-label="Toggle theme"
+          title="Toggle theme"
+        >
+          <span class="theme-icon theme-icon--light">☀</span>
+          <span class="theme-icon theme-icon--dark">☾</span>
+        </button>
+        <button
+          type="button"
+          class="btn btn--ghost cmd-trigger"
+          aria-haspopup="dialog"
+        >
+          <kbd>Ctrl</kbd><kbd>K</kbd>
+        </button>
+      </div>
+    </header>
+
+    <main id="main">
+      <section id="hero" class="hero">
+        <div class="hero-content">
+          <p class="eyebrow">
+            <span class="status-dot" aria-hidden="true"></span>
+            <span data-profile="availability">Open to opportunities</span>
+          </p>
+          <h1 class="hero-title">
+            <span class="hero-line">I'm</span>
+            <span class="hero-name" data-profile="name">Akansha Aggarwal</span>
+            <span class="hero-line hero-line--accent" data-profile="tagline"
+              >building things that matter.</span
+            >
+          </h1>
+          <p class="hero-lead" data-profile="headline">
+            Replace this with a sharp one-liner: what you do, who you help, and
+            what makes you different.
+          </p>
+          <div class="hero-cta">
+            <a href="#projects" class="btn btn--primary" data-nav="projects"
+              >See my work</a
+            >
+            <a href="resume.pdf" class="btn btn--secondary" data-resume="hero-download" download
+              target="_blank"
+              rel="noopener"
+              >Download CV</a
+            >
+          </div>
+          <dl class="hero-stats" aria-label="Highlights"></dl>
+        </div>
+        <div class="hero-visual" aria-hidden="true">
+          <div class="orbit">
+            <div class="orbit-ring orbit-ring--1"></div>
+            <div class="orbit-ring orbit-ring--2"></div>
+            <div class="orbit-core">
+              <span data-profile="role-short">Dev</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="section about">
+        <div class="section-header">
+          <span class="section-label">01 — About</span>
+          <h2>Story, not just a résumé</h2>
+        </div>
+        <div class="about-grid">
+          <div class="about-copy">
+            <p data-profile="about-1">
+              Write 2–3 sentences on your background: degree, pivot, or what
+              pulled you into tech.
+            </p>
+            <p data-profile="about-2">
+              Second paragraph: what you're looking for now and how you work
+              (collaborative, fast learner, detail-oriented).
+            </p>
+          </div>
+          <aside class="about-facts">
+            <h3 class="sr-only">Quick facts</h3>
+            <ul class="fact-list" data-facts></ul>
+          </aside>
+        </div>
+      </section>
+
+
+      <section id="resume" class="section resume">
+        <div class="section-header">
+          <span class="section-label">02 — Resume</span>
+          <h2>Experience &amp; education</h2>
+          <p class="section-desc">
+            Synced from your CV — edit <code>data.js</code> or replace
+            <code>resume.pdf</code> in this folder.
+          </p>
+        </div>
+        <div class="resume-download-card">
+          <div class="resume-download-copy">
+            <p class="resume-summary" data-resume="summary"></p>
+            <p class="resume-updated">
+              PDF · updated <span data-resume="updated"></span>
+            </p>
+          </div>
+          <div class="resume-download-actions">
+            <a
+              href="resume.pdf"
+              class="btn btn--primary resume-pdf-link"
+              data-resume="pdf-link"
+              download
+              >Download PDF</a
+            >
+            <a
+              href="resume.pdf"
+              class="btn btn--secondary resume-pdf-view"
+              data-resume="view-link"
+              target="_blank"
+              rel="noopener"
+              >View in browser</a
+            >
+          </div>
+          <p class="resume-missing hidden" data-resume="missing">
+            Add your CV: save it as <strong>resume.pdf</strong> in the
+            portfolio folder, then refresh.
+          </p>
+        </div>
+        <div class="resume-grid">
+          <div class="resume-column">
+            <h3 class="resume-column-title">Experience</h3>
+            <ol class="timeline" data-experience></ol>
+          </div>
+          <div class="resume-column">
+            <h3 class="resume-column-title">Education</h3>
+            <ul class="education-list" data-education></ul>
+          </div>
+          <div class="resume-column">
+            <h3 class="resume-column-title">Leadership</h3>
+            <ul class="education-list" data-leadership></ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills" class="section skills">
+        <div class="section-header">
+          <span class="section-label">03 — Skills</span>
+          <h2>What I bring to the table</h2>
+          <p class="section-desc">
+            Click a skill to see where you've used it — recruiters love
+            context.
+          </p>
+        </div>
+        <div class="skills-layout">
+          <div class="skill-cloud" role="list" data-skills></div>
+          <div class="skill-detail" aria-live="polite">
+            <p class="skill-detail-placeholder">
+              Select a skill to see proof of use.
+            </p>
+            <div class="skill-detail-content hidden">
+              <h3 class="skill-detail-title"></h3>
+              <p class="skill-detail-text"></p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="section projects">
+        <div class="section-header">
+          <span class="section-label">04 — Work</span>
+          <h2>Selected projects</h2>
+          <p class="section-desc">
+            Lead with impact: problem → what you did → measurable result.
+          </p>
+        </div>
+        <div class="bento" data-projects></div>
+      </section>
+
+      <section id="contact" class="section contact">
+        <div class="section-header">
+          <span class="section-label">05 — Contact</span>
+          <h2>Let's talk</h2>
+        </div>
+        <div class="contact-card">
+          <p class="contact-lead">
+            Hiring managers: one clear email beats ten social links.
+          </p>
+          <a
+            class="contact-email"
+            href="mailto:you@example.com"
+            data-profile="email"
+            >you@example.com</a
+          >
+          <ul class="social-links" data-social></ul>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>
+        Built with care ·
+        <span data-profile="year"></span>
+        <span data-profile="name-footer">Akansha Aggarwal</span>
+      </p>
+    </footer>
+
+    <dialog class="cmd-palette" aria-labelledby="cmd-title">
+      <div class="cmd-inner">
+        <h2 id="cmd-title" class="sr-only">Command palette</h2>
+        <input
+          type="search"
+          class="cmd-input"
+          placeholder="Jump to section or project…"
+          autocomplete="off"
+          spellcheck="false"
+        />
+        <ul class="cmd-results" role="listbox"></ul>
+        <p class="cmd-hint">↑↓ navigate · Enter go · Esc close</p>
+      </div>
+    </dialog>
+
+    <script src="data.js?v=2"></script>
+    <script src="main.js?v=2"></script>
+  </body>
+</html>
